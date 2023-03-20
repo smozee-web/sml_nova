@@ -76,6 +76,13 @@
 					</a>
 				</li>
 				<li>
+					<a class="shipment">
+						<div class="parent-icon"><i class="bx bx-basket"></i>
+						</div>
+						<div class="menu-title">Shipment </div>
+					</a>
+				</li>
+				<li>
 					<a class="refinery">
 						<div class="parent-icon"><i class="bx bx-meteor"></i>
 						</div>
@@ -342,14 +349,14 @@
 						<table id="example" class="table table-striped table-bordered">
 							<thead>
 								<tr>
-									<th>MINED_DATE</th>
+									<th>Production_Date</th>
 									<th>MINING SITE</th>
-									<th>PIT</th>
 									<th width="25%">MINER</th>
-									<th>OUNCE_OF_GOLD (oz)</th>
+									<th>Ounce_of_Gold_Dore</th>
 									<th>ASSAYER'S_STATUS</th>
-									<th><div style="width: 95px;">No_ Of LOTS</div></th>
-									<th>VALIDATING_OFFICERS</th>
+									<th>NUMBER_OF_LOTS</th>
+									<th>VALIDATING_OFFICER</th>
+									<th>COMMERCIAL_TERMS</th>
 									<th>DOCUMENTS</th>
 								</tr>
 							</thead>
@@ -357,12 +364,12 @@
 								<tr>
 									<td>01/01/2022</td>
 									<td>Bekwai</td>
-									<td>Seaton Burn</td>
 									<td>Kds Agro & Mining Ghana Limited</td>
 									<td>16</td>
 									<td>Yes</td>
 									<td>17</td>
 									<td>Nelson Ahedor<br>Regina Aku<br>Richard Dzobi</td>
+									<td>Pro forma invoice</td>
 									<td>
 										<div class="row row-cols-auto g-2">
 											<div class="col">
@@ -422,12 +429,12 @@
 								<tr>
 									<td>06/03/2022</td>
 									<td>Tema</td>
-									<td>Coelbren, South Wales</td>
 									<td>Senyao Investments Gh. Ltd</td>
 									<td>31</td>
 									<td>Yes</td>
 									<td>25</td>
-									<td>Ibrahim Assani<br>Alimo osei</td>
+									<td>Ibrahim Assani</td>
+									<td>Commercial invoice</td>
 									<td>
 										<div class="row row-cols-auto g-2">
 											<div class="col">
@@ -487,12 +494,12 @@
 								<tr>
 									<td>12/08/2022</td>
 									<td>Techiman</td>
-									<td>Mirny mine</td>
 									<td>Cemix Ghana Limited</td>
 									<td>22</td>
 									<td>No</td>
 									<td>30</td>
 									<td>Emmanuel Osei-Kesse<br>AKoumani Shadrak</td>
+									<td>Packing list</td>
 									<td>
 										<div class="row row-cols-auto g-2">
 											<div class="col">
@@ -552,12 +559,12 @@
 								<tr>
 									<td>12/08/2022</td>
 									<td>Takoradi</td>
-									<td>Palabora</td>
 									<td>Akayet Mining Services Ltd.</td>
 									<td>10</td>
 									<td>Yes</td>
 									<td>20</td>
-									<td>Irene Demanya<br>Ofori Isaac<br>Ivy Edem</td>
+									<td>Irene Demanya</td>
+									<td>Letter of credit</td>
 									<td>
 										<div class="row row-cols-auto g-2">
 											<div class="col">
@@ -617,12 +624,12 @@
 								<tr>
 									<td>23/11/2022</td>
 									<td>Tatale</td>
-									<td>Sierra menera</td>
 									<td>Allan Mining and Jewellery</td>
 									<td>61</td>
 									<td>No</td>
 									<td>25</td>
 									<td>Collins Anim-Sackey<br>Hailou Ibrahim</td>
+									<td>Certificate of insurance</td>
 									<td>
 										<div class="row row-cols-auto g-2">
 											<div class="col">
@@ -682,12 +689,12 @@
 								<tr>
 									<td>07/01/2023</td>
 									<td>Kumasi</td>
-									<td>Cerro colorado</td>
 									<td>Goldproc Mining Company Ltd.</td>
 									<td>89</td>
 									<td>Yes</td>
 									<td>28</td>
-									<td>Shirley Kyei<br>Evelyn Teye</td>
+									<td>Shirley Kyei</td>
+									<td>Certificate of insurance</td>
 									<td>
 										<div class="row row-cols-auto g-2">
 											<div class="col">
@@ -747,12 +754,12 @@
 								<tr>
 									<td>13/01/2023</td>
 									<td>Ho</td>
-									<td>Berkeley PIT</td>
 									<td>Willstan Civil & Mining Ltd.</td>
 									<td>29</td>
 									<td>No</td>
 									<td>35</td>
-									<td>Samuel Yeyu Tika<br>Rachel Bonsu</td>
+									<td>Samuel Yeyu Tika</td>
+									<td>Packing list</td>
 									<td>
 										<div class="row row-cols-auto g-2">
 											<div class="col">
@@ -974,6 +981,10 @@
 		$(".reporting").click(function () {
 			window.location.href = "reporting.html";
 		});
+		$(".shipment").click(function () {
+			window.location.href = "shipement.html";
+		});
+		
 	</script>
 
 </body>

@@ -14,7 +14,8 @@
 	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
 	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
 	<link href="assets/plugins/datatable/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.min.css">
+	<link rel="stylesheet"
+		href="assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.min.css">
 	<link href="assets/plugins/datetimepicker/css/classic.css" rel="stylesheet" />
 	<link href="assets/plugins/datetimepicker/css/classic.date.css" rel="stylesheet" />
 
@@ -56,7 +57,7 @@
 					</a>
 				</li>
 				<li class="menu-label">Gold Room</li>
-				
+
 				<li class="gold_room">
 					<a href="javascript:;">
 						<div class="parent-icon"><i class="bx bx-atom"></i>
@@ -69,6 +70,13 @@
 						<div class="parent-icon"><i class="bx bx-bomb"></i>
 						</div>
 						<div class="menu-title">Trackers</div>
+					</a>
+				</li>
+				<li>
+					<a class="shipment">
+						<div class="parent-icon"><i class="bx bx-basket"></i>
+						</div>
+						<div class="menu-title">Shipment</div>
 					</a>
 				</li>
 				<li>
@@ -91,7 +99,7 @@
 						</div>
 						<div class="menu-title">Receivables</div>
 					</a>
-				</li>				
+				</li>
 				<li>
 					<a class="gra_validator">
 						<div class="parent-icon"><i class="bx bx-check"></i>
@@ -270,9 +278,9 @@
 			</div>
 			<div
 				class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-4 product-grid justify-content-center">
-				
+
 				<div class="col ">
-					
+
 					<div class="card gold_room">
 						<br>
 						<div class="text-center">
@@ -281,13 +289,13 @@
 
 						<div class="card-body">
 							<h6 class="card-title text-center cursor-pointer">Stock Tracking Report</h6>
-							
-							
+
+
 						</div>
 					</div>
 				</div>
 				<div class="col ">
-					
+
 					<div class="card tracker">
 						<br>
 						<div class="text-center">
@@ -296,14 +304,14 @@
 
 						<div class="card-body">
 							<h6 class="card-title text-center cursor-pointer">Sales Report</h6>
-							
-							
+
+
 						</div>
 					</div>
 				</div>
 
 				<div class="col ">
-					
+
 					<div class="card refinery">
 						<br>
 						<div class="text-center">
@@ -312,14 +320,14 @@
 
 						<div class="card-body">
 							<h6 class="card-title text-center cursor-pointer">Expired Refineries Report</h6>
-							
-							
+
+
 						</div>
 					</div>
 				</div>
 
 				<div class="col sales">
-					
+
 					<div class="card ">
 						<br>
 						<div class="text-center">
@@ -328,14 +336,14 @@
 
 						<div class="card-body">
 							<h6 class="card-title text-center cursor-pointer">Untraceable Gold Report</h6>
-							
-							
+
+
 						</div>
 					</div>
 				</div>
 
 				<div class="col ">
-					
+
 					<div class="card receivable">
 						<br>
 						<div class="text-center">
@@ -344,14 +352,14 @@
 
 						<div class="card-body">
 							<h6 class="card-title text-center cursor-pointer">Untraceable Dore Report</h6>
-							
-							
+
+
 						</div>
 					</div>
 				</div>
 
 				<div class="col gra_validator">
-					
+
 					<div class="card ">
 						<br>
 						<div class="text-center">
@@ -360,14 +368,14 @@
 
 						<div class="card-body">
 							<h6 class="card-title text-center cursor-pointer">Royalties Due Report</h6>
-							
-							
+
+
 						</div>
 					</div>
 				</div>
 
 				<div class="col gra_validator">
-					
+
 					<div class="card ">
 						<br>
 						<div class="text-center">
@@ -376,14 +384,14 @@
 
 						<div class="card-body">
 							<h6 class="card-title text-center cursor-pointer">Participating Interest Report</h6>
-							
-							
+
+
 						</div>
 					</div>
 				</div>
 
 				<div class="col gra_validator">
-					
+
 					<div class="card ">
 						<br>
 						<div class="text-center">
@@ -392,14 +400,14 @@
 
 						<div class="card-body">
 							<h6 class="card-title text-center cursor-pointer">Understated Declaration Report</h6>
-							
-							
+
+
 						</div>
 					</div>
 				</div>
 
 				<div class="col gra_validator">
-					
+
 					<div class="card ">
 						<br>
 						<div class="text-center">
@@ -408,12 +416,12 @@
 
 						<div class="card-body">
 							<h6 class="card-title text-center cursor-pointer">Due Dividend Report</h6>
-							
-							
+
+
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 
 
@@ -495,9 +503,9 @@
 	<script>
 		$('.datepicker').pickadate({
 			selectMonths: true,
-	        selectYears: true
+			selectYears: true
 		}),
-		$('.timepicker').pickatime()
+			$('.timepicker').pickatime()
 	</script>
 	<script>
 		$(function () {
@@ -567,6 +575,9 @@
 		});
 		$(".reporting").click(function () {
 			window.location.href = "reporting.html";
+		});
+		$(".shipment").click(function () {
+			window.location.href = "shipement.html";
 		});
 	</script>
 
